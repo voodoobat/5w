@@ -1,7 +1,16 @@
 @import 'global/vars';
-@import 'global/functions';
 @import 'global/mixins';
 
-@import 'global/root';
-@import 'global/reboot';
-@import 'global/responsive';
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+@import 'global/base';
+
+@import 'components/layout';
+@import 'components/sidebar';
+@import 'components/icon';
+@import 'components/header';
+@import 'components/breadcrumbs';
+@import 'components/user';
+@import 'components/messages';
+@import 'components/nav';
+

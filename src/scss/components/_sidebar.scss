@@ -1,0 +1,12 @@
+.sidebar {}
+
+.sidebar_logo {
+  @include size(82px 32px);
+
+  display: block;
+  margin: $grid-gutter-width;
+
+  > img {
+    max-width: 100%;
+  }
+}

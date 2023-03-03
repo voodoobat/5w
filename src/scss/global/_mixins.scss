@@ -17,15 +17,6 @@
   }
 }
 
-@mixin responsive-type($font-size-min, $font-size-max, $point-min, $point-max) {
-  $font-size-rem: remove-unit($font-size-max - $font-size-min);
-  $point-rem: remove-unit($point-max - $point-min);
-
-  font-size: calc(
-    #{$font-size-min} + #{$font-size-rem} * (100vw - #{$point-min}) / #{$point-rem}
-  );
-}
-
 @mixin media($point, $minmax: min) {
   @if type-of($point) == list {
     @media (min-width: nth($point, 1)) and (max-width: nth($point, 2) - 0.2) {
@@ -69,23 +60,5 @@
 
   @for $j from 1 through length($coords) {
     #{nth($rules, $j)}: list.nth($coords, $j);
-  }
-}
-
-@mixin flex-container($gap-x: $GRID_GAP, $gap-y: $gap-x) {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: $gap-x;
-  row-gap: $gap-y;
-}
-
-@mixin flex-column($size: 1 1, $push: null, $gap: $GRID_GAP) {
-  @if type-of($size) == list {
-    min-width: calc-column-size($size, $gap);
-    max-width: calc-column-size($size, $gap);
-  }
-
-  @if type-of($push) == list {
-    margin-left: calc-column-size($push, $gap, true);
   }
 }

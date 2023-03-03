@@ -1,0 +1,44 @@
+.main-nav {
+  padding-left: 0;
+}
+
+.main-nav_item {
+  position: relative;
+
+  &::before {
+    @include position(absolute, 0 null null 0);
+    @include size(0 100%);
+
+    content: '';
+    background: $color-indigo;
+    transition: width 0.3s ease;
+  }
+
+  &.is-active,
+  &:hover {
+    &::before {
+      width: 4px;
+    }
+  }
+}
+
+.main-nav_link {
+  padding-left: $grid-gutter-width !important;
+  gap: $grid-gutter-width / 2;
+  text-decoration: none;
+  color: $text-muted;
+  transition: color 0.3s ease;
+
+  .main-nav_item.is-active & {
+    cursor: default;
+  }
+
+  .main-nav_item.is-active &,
+  &:hover {
+    color: $color-indigo;
+  }
+}
+
+.main-nav_icon {
+  @include size(21px);
+}

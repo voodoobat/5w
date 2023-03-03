@@ -1,1 +1,53 @@
-{}
+{
+  "user": {
+    "image": "images/user.jpg",
+    "name": "Максим Добжанский"
+  },
+  "nav": [
+    {
+      "name": "Главная",
+      "icon": "home",
+      "href": "/"
+    },
+    {
+      "name": "Мои магазины",
+      "icon": "cart",
+      "href": "/cart"
+    },
+    {
+      "name": "Промоматериалы",
+      "icon": "promo",
+      "href": "/promo"
+    },
+    {
+      "name": "Статистика",
+      "icon": "stat",
+      "href": "/stat"
+    },
+    {
+      "name": "Баланс",
+      "icon": "balance",
+      "href": "/balance"
+    },
+    {
+      "name": "Персональные данные",
+      "icon": "personal",
+      "href": "/personal"
+    },
+    {
+      "name": "FAQ",
+      "icon": "faq",
+      "href": "/faq"
+    },
+    {
+      "name": "Техподдержка",
+      "icon": "support",
+      "href": "/support"
+    },
+    {
+      "name": "Выход",
+      "icon": "logout",
+      "href": "/logout"
+    }
+  ]
+}

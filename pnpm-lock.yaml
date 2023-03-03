@@ -6,8 +6,10 @@ overrides:
 specifiers:
   '@babel/core': ^7.21.0
   '@babel/preset-env': ^7.20.2
+  '@popperjs/core': ^2.11.6
   autoprefixer: ^10.4.13
   babel-loader: ^8.3.0
+  bootstrap: ^5.2.3
   browser-sync: ^2.28.1
   dotenv: ^16.0.3
   eslint: ^8.35.0
@@ -38,6 +40,10 @@ specifiers:
   terser-webpack-plugin: ^5.3.6
   webpack: ^5.75.0
   yargs: ^17.7.1
+
+dependencies:
+  '@popperjs/core': 2.11.6
+  bootstrap: 5.2.3_@popperjs+core@2.11.6
 
 devDependencies:
   '@babel/core': 7.21.0
@@ -1382,6 +1388,10 @@ packages:
       fastq: 1.15.0
     dev: true
 
+  /@popperjs/core/2.11.6:
+    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
+    dev: false
+
   /@socket.io/component-emitter/3.1.0:
     resolution: {integrity: sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==}
     dev: true
@@ -2070,6 +2080,14 @@ packages:
   /boolbase/1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: true
+
+  /bootstrap/5.2.3_@popperjs+core@2.11.6:
+    resolution: {integrity: sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.6
+    dependencies:
+      '@popperjs/core': 2.11.6
+    dev: false
 
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}

@@ -1,0 +1,9 @@
+<div class="header d-flex justify-content-between">
+  {% include 'breadcrumbs.twig' with {
+    breadcrumbs: page.breadcrumbs
+  } %}
+  <nav class="header_buttons d-flex align-items-center">
+    {% include 'messages.twig' with { isActive: true } %}
+    {% include 'user.twig' with global.user %}
+  </nav>
+</div>

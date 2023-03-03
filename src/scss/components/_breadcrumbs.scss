@@ -1,0 +1,12 @@
+.breadcrumbs {}
+
+.breadcrumbs_item {
+  color: #656565;
+  text-decoration: none;
+
+  &:not(:last-child) {
+    &:hover {
+      color: $color-indigo;
+    }
+  }
+}

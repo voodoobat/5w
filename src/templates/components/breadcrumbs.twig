@@ -1,0 +1,16 @@
+<nav class="breadcrumbs">
+  {% for item in breadcrumbs %}
+    {% if item.href %}
+      <a class="breadcrumbs_item" href="{{ item.href }}">
+        {{ item.name }}
+      </a>
+      <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L6 4.5L1 8" stroke="#656565" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    {% else %}
+      <span class="breadcrumbs_item">
+        {{ item.name }}
+      </span>
+    {% endif %}
+  {% endfor %}
+</nav>

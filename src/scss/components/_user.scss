@@ -1,0 +1,15 @@
+.user {
+  @include size(256px 65px);
+
+  gap: $grid-gutter-width;
+}
+
+.user_image {
+  @include size(41px);
+
+  border: 2px solid #d9d9d9;
+
+  > img {
+    max-width: 100%;
+  }
+}

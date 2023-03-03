@@ -1,0 +1,28 @@
+.messages {
+  @include size(65px);
+
+  border: 2px solid #7b7b7b;
+  color: #7b7b7b;
+
+  &:hover {
+    color: #7b7b7b;
+  }
+}
+
+.messages_icon {
+  @include size(22px);
+
+  position: relative;
+
+  .messages.is-active & {
+    &::before {
+      @include size(9px);
+      @include position(absolute, -2px -4px);
+
+      content: '';
+      background: $danger;
+      border: 2px solid $white;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.layout {
+  display: flex;
+  min-height: 100%;
+}
+
+.layout_side {
+  width: 256px;
+  min-height: 100%;
+  background: $white;
+}
+
+.layout_content {
+  flex-grow: 10;
+}

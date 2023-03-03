@@ -5,6 +5,10 @@
     "dev": "gulp templates scss js icons images copy -ws --env development",
     "build": "rm -rf dist && gulp scss icons images copy js && gulp production && gulp templates"
   },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",

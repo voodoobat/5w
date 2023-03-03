@@ -1,0 +1,12 @@
+<ul class="main-nav d-flex flex-column">
+  {% for item in global.nav %}
+  <li class="main-nav_item {{ (loop.index == page.nav_active_index) ? 'is-active' : '' }}">
+    <a class="main-nav_link d-flex p-3" href="{{ item.href }}">
+      <span class="main-nav_icon">
+        {% include 'icon.twig' with { name: item.icon } %}
+      </span>
+      {{ item.name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

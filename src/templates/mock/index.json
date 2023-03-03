@@ -1,3 +1,13 @@
 {
-  "title": "Home"
+  "title": "Home",
+  "nav_active_index": 2,
+  "breadcrumbs": [
+    {
+      "name": "Главная",
+      "href": "/"
+    },
+    {
+      "name": "Мои магазины"
+    }
+  ]
 }
