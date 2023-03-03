@@ -4,7 +4,7 @@
   @include size(82px 32px);
 
   display: block;
-  margin: $grid-gutter-width;
+  margin: $grid-gutter-width $grid-gutter-width $grid-gutter-width * 1.5;
 
   > img {
     max-width: 100%;
