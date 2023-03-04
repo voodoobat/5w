@@ -1,7 +1,11 @@
 .user {
-  @include size(256px 65px);
+  @include size(256px $action-button-size);
 
   gap: $grid-gutter-width;
+
+  @include media-breakpoint-down(md) {
+    @include size($action-button-size-sm);
+  }
 }
 
 .user_image {
@@ -11,5 +15,11 @@
 
   > img {
     max-width: 100%;
+  }
+}
+
+.user_name {
+  @include media-breakpoint-down(md) {
+    display: none;
   }
 }

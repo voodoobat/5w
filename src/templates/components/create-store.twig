@@ -1,0 +1,50 @@
+<div class="create-store mb-5">
+  <button class="btn btn-primary text-white d-inline-flex align-items-center" type="button">
+    {% include 'icon.twig' with { name: 'plus' } %}
+    <span>Создать свой магазин</span>
+  </button>
+  <div class="s-modal bg-white shadow-lg p-4 rounded js-modal">
+    <span class="s-modal_close">
+      {% include 'icon.twig' with { name: 'close' } %}
+    </span>
+    <div class="h4 mb-3">Создать магазин</div>
+    <form action="">
+      <div class="d-md-flex justify-content-md-between mb-3">
+        <div class="create-store_select mb-3 mb-md-0">
+          <label class="form-label" for="template">Шаблон</label>
+          <select id="template" class="form-select">
+            <option selected>Стандартный</option>
+            <option>Нестандартный</option>
+          </select>
+        </div>
+        <div class="create-store_select">
+          <label class="form-label" for="colorscheme">Цветовая схема</label>
+          <select id="colorscheme" class="form-select">
+            <option selected>Классическая</option>
+            <option>Неклассическая</option>
+          </select>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="form-label" for="domain">
+          Домен
+        </label>
+        <div class="input-group">
+          <input class="form-control" id="domain" type="text" placeholder="Например: ivangrozniy">
+          <span class="input-group-text text-white">.work5.ru</span>
+        </div>
+      </div>
+      <div class="mb-4">
+        {% include 'hint.twig' with { icon: 'hint', text: page.create_store_hint } %}
+      </div>
+      <div class="create-store_buttons d-flex">
+        <button class="btn btn-secondary text-white" type="button">
+          Отмена
+        </button>
+        <button class="btn btn-primary text-white">
+          Создать
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

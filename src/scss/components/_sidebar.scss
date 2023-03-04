@@ -6,6 +6,11 @@
   display: block;
   margin: $grid-gutter-width $grid-gutter-width $grid-gutter-width * 1.5;
 
+  @include media-breakpoint-down(lg) {
+    @include size(50px 20px);
+    margin: $grid-gutter-width 0 $grid-gutter-width 8px;
+  }
+
   > img {
     max-width: 100%;
   }

@@ -1,0 +1,16 @@
+.create-store {
+  position: relative;
+}
+
+.create-store_select {
+  min-width: 40%;
+}
+
+.create-store_buttons {
+  gap: 1rem;
+
+  > .btn {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

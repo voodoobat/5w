@@ -1,0 +1,8 @@
+<div class="hint d-flex align-items-center">
+  {% if icon %}
+    {% include 'icon.twig' with { name: icon } %}
+  {% endif %}
+  <div class="hint_text text-muted">
+    {{ text }}
+  </div>
+</div>

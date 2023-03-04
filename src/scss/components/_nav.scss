@@ -44,3 +44,9 @@
 .main-nav_icon {
   @include size(21px);
 }
+
+.main-nav_text {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}

@@ -2,6 +2,10 @@
   .crumbs-separator-icon {
     @include size(8px);
   }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }
 
 .breadcrumbs_item {

@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .layout {
   display: flex;
   min-height: 100%;
@@ -7,11 +9,20 @@
   min-width: $menu-width;
   min-height: 100%;
   background: $white;
+
+  @include media-breakpoint-down(lg) {
+    min-width: $menu-width-sm;
+    max-width: $menu-width-sm;
+  }
 }
 
 .layout_content {
   flex-grow: 10;
   max-width: calc(100% - $menu-width);
+
+  @include media-breakpoint-down(lg) {
+    max-width: calc(100% - $menu-width-sm);
+  }
 }
 
 .layout_main {
@@ -19,4 +30,8 @@
 
   max-width: calc(1000px + #{$padding * 2});
   padding: $padding $padding $padding $padding * 2;
+
+  @include media-breakpoint-down(lg) {
+    padding: math.div($padding, 2);
+  }
 }

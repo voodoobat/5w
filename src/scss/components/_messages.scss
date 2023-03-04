@@ -1,8 +1,12 @@
 .messages {
-  @include size(65px);
+  @include size($action-button-size);
 
   border: 2px solid #7b7b7b;
   color: #7b7b7b;
+
+  @include media-breakpoint-down(md) {
+    @include size($action-button-size-sm);
+  }
 
   &:hover {
     color: #7b7b7b;

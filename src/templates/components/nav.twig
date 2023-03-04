@@ -5,7 +5,9 @@
       <span class="main-nav_icon">
         {% include 'icon.twig' with { name: item.icon } %}
       </span>
-      {{ item.name }}
+      <span class='main-nav_text'>
+        {{ item.name }}
+      </span>
     </a>
   </li>
   {% endfor %}

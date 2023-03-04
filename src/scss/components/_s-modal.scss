@@ -1,0 +1,20 @@
+.s-modal {
+  @include position(absolute, 100% null null 0);
+
+  margin-top: $grid-gutter-width;
+  max-width: 617px;
+}
+
+.s-modal_close {
+  @include size(2rem);
+  @include position(absolute, 1.4rem 1rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  > .icon {
+    @include size(17px);
+  }
+}

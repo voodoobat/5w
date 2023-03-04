@@ -1,0 +1,15 @@
+.hint {
+  > .icon {
+    $size: 52px;
+
+    height: $size;
+    min-width: $size;
+    max-width: $size;
+    margin-right: 1rem;
+    color: $color-indigo;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}

@@ -5,6 +5,7 @@
 
 @import 'global/base';
 @import 'global/buttons';
+@import 'global/over';
 
 @import 'components/layout';
 @import 'components/sidebar';
@@ -14,4 +15,7 @@
 @import 'components/user';
 @import 'components/messages';
 @import 'components/nav';
+@import 'components/hint';
 @import 'components/stores-table';
+@import 'components/create-store';
+@import 'components/s-modal';
