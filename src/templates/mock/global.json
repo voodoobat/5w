@@ -12,7 +12,7 @@
     {
       "name": "Мои магазины",
       "icon": "cart",
-      "href": "/cart"
+      "href": "/"
     },
     {
       "name": "Промоматериалы",
@@ -48,6 +48,18 @@
       "name": "Выход",
       "icon": "logout",
       "href": "/logout"
+    }
+  ],
+  "stores": [
+    {
+      "id": 12345,
+      "name": "Дипломная работа",
+      "address": "http://www.work5.ru/services"
+    },
+    {
+      "id": 12345,
+      "name": "Дипломная работа",
+      "address": "http://www.work5.ru/services"
     }
   ]
 }

@@ -4,11 +4,19 @@
 }
 
 .layout_side {
-  width: 256px;
+  min-width: $menu-width;
   min-height: 100%;
   background: $white;
 }
 
 .layout_content {
   flex-grow: 10;
+  max-width: calc(100% - $menu-width);
+}
+
+.layout_main {
+  $padding: $grid-gutter-width;
+
+  max-width: calc(1000px + #{$padding * 2});
+  padding: $padding $padding $padding $padding * 2;
 }

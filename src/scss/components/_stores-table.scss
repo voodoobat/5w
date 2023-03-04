@@ -1,0 +1,30 @@
+.stores-table-box {
+  overflow-x: scroll;
+}
+
+.stores-table {
+  min-width: 720px;
+}
+
+.stores-table_grid {
+  display: grid;
+  grid-template-columns:
+    60px
+    minmax(150px, 1fr)
+    minmax(200px, 1.5fr)
+    310px;
+  align-items: center;
+}
+
+.stores-table_body {
+  padding: 1rem 0;
+  color: #6e6e6e;
+
+  + .stores-table_body {
+    border-top: 1px solid rgba($secondary, 35%);
+  }
+
+  .btn + .btn {
+    margin-left: 0.5rem;
+  }
+}

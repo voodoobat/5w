@@ -1,5 +1,16 @@
 {% extends 'layout/base.twig' %}
 
 {% block content %}
-
+  <div class="mb-5">
+    <button class="btn btn-primary text-white d-inline-flex align-items-center" type="button">
+      {% include 'components/icon.twig' with { name: 'plus' } %}
+      <span>Создать свой магазин</span>
+    </button>
+  </div>
+  <div class="h4 mb-5">
+    Управление магазинами
+  </div>
+  <div class="bg-white rounded shadow-sm p-4">
+    {% include 'components/stores_table.twig' %}
+  </div>
 {% endblock %}

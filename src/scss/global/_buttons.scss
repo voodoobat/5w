@@ -1,0 +1,15 @@
+.btn {
+  gap: $btn-padding-x;
+
+  > .plus-icon {
+    @include size(10px);
+  }
+
+  > .edit-icon {
+    @include size(15px);
+  }
+
+  > .remove-icon {
+    @include size(14px);
+  }
+}

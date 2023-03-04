@@ -18,9 +18,11 @@
       </div>
       <div class="layout_content">
         {% include '../components/header.twig' %}
+        <div class="layout_main">
+          {% block content %}{% endblock %}
+        </div>
       </div>
     </div>
-    {% block content %}{% endblock %}
     <script src="assets/{{ asset('global.js') }}"></script>
   </body>
 </html>

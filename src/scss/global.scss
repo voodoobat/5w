@@ -4,6 +4,7 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 @import 'global/base';
+@import 'global/buttons';
 
 @import 'components/layout';
 @import 'components/sidebar';
@@ -13,4 +14,4 @@
 @import 'components/user';
 @import 'components/messages';
 @import 'components/nav';
-
+@import 'components/stores-table';

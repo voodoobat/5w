@@ -1,0 +1,27 @@
+<div class="stores-table-box">
+  <div class="stores-table">
+    <div class="stores-table_grid">
+      <div>№</div>
+      <div>Название</div>
+      <div>Адрес</div>
+      <div>Действие</div>
+    </div>
+    {% for store in global.stores %}
+      <div class="stores-table_body stores-table_grid">
+        <div>{{ store.id }}</div>
+        <div>{{ store.name }}</div>
+        <div>{{ store.address }}</div>
+        <div class="stores-table_buttons">
+          <button class="btn btn-primary text-white d-inline-flex align-items-center" type="button">
+            {% include 'icon.twig' with { name: 'edit' } %}
+            <span>Редактировать</span>
+          </button>
+          <button class="btn btn-secondary text-white d-inline-flex align-items-center" type="button">
+            {% include 'icon.twig' with { name: 'remove' } %}
+            <span>Редактировать</span>
+          </button>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

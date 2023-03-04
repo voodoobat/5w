@@ -1,4 +1,8 @@
-.breadcrumbs {}
+.breadcrumbs {
+  .crumbs-separator-icon {
+    @include size(8px);
+  }
+}
 
 .breadcrumbs_item {
   color: #656565;

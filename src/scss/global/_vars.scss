@@ -1,16 +1,20 @@
-//$MQ_ZERO: 420px;
-//$MQ_MOBILE: 768px;
-//$MQ_TABLET: 1024px;
-//$MQ_LAPTOP: 1440px;
-//$MQ_DESKTOP: 1920px;
-//
-//$CONTAINER_WIDTH: 144rem;
-//$GRID_GAP: 2rem;
-
+// overrides
 
 $font-family-sans-serif: Roboto, sans-serif;
 
 $text-dark: #343434;
 $text-muted: #7d7d7d;
+$primary: #55c97b;
+$secondary: #b1b1b1;
 
-$color-indigo: #6666CC;
+$btn-font-size: 0.9rem;
+
+$input-btn-padding-x: 1rem;
+$input-btn-padding-y: 0.55rem;
+
+
+// custom
+
+$color-indigo: #6666cc;
+
+$menu-width: 256px;
