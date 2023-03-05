@@ -3,6 +3,17 @@
 
   margin-top: $grid-gutter-width;
   max-width: 617px;
+  transform: scale(0.8) translateY(3rem);
+  transform-origin: top left;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+
+  &.is-active {
+    transform: none;
+    pointer-events: all;
+    opacity: 1;
+  }
 }
 
 .s-modal_close {

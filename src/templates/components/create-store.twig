@@ -1,10 +1,10 @@
 <div class="create-store mb-5">
-  <button class="btn btn-primary text-white d-inline-flex align-items-center" type="button">
+  <button class="btn btn-primary text-white d-inline-flex align-items-center" type="button" data-js-modal="#create-store">
     {% include 'icon.twig' with { name: 'plus' } %}
     <span>Создать свой магазин</span>
   </button>
-  <div class="s-modal bg-white shadow-lg p-4 rounded js-modal">
-    <span class="s-modal_close">
+  <div class="s-modal bg-white shadow-lg p-4 rounded js-modal" id="create-store">
+    <span class="s-modal_close" data-js-modal="#create-store">
       {% include 'icon.twig' with { name: 'close' } %}
     </span>
     <div class="h4 mb-3">Создать магазин</div>
@@ -38,7 +38,7 @@
         {% include 'hint.twig' with { icon: 'hint', text: page.create_store_hint } %}
       </div>
       <div class="create-store_buttons d-flex">
-        <button class="btn btn-secondary text-white" type="button">
+        <button class="btn btn-secondary text-white" type="button"  data-js-modal="#create-store">
           Отмена
         </button>
         <button class="btn btn-primary text-white">
