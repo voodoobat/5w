@@ -28,7 +28,7 @@
     "gulp-rev": "^9.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-squoosh": "^0.9.0",
+    "gulp-squoosh": "^0.11.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svgo": "^2.2.1",
     "gulp-twig": "^1.2.0",

@@ -24,7 +24,7 @@ specifiers:
   gulp-rev: ^9.0.0
   gulp-sass: ^5.1.0
   gulp-sourcemaps: ^3.0.0
-  gulp-squoosh: ^0.9.0
+  gulp-squoosh: ^0.11.0
   gulp-svg-sprite: ^1.5.0
   gulp-svgo: ^2.2.1
   gulp-twig: ^1.2.0
@@ -64,7 +64,7 @@ devDependencies:
   gulp-rev: 9.0.0
   gulp-sass: 5.1.0
   gulp-sourcemaps: 3.0.0
-  gulp-squoosh: 0.9.0
+  gulp-squoosh: 0.11.0
   gulp-svg-sprite: 1.5.0
   gulp-svgo: 2.2.1
   gulp-twig: 1.2.0
@@ -3439,6 +3439,13 @@ packages:
       time-stamp: 1.1.0
     dev: true
 
+  /fancy-log/2.0.0:
+    resolution: {integrity: sha512-9CzxZbACXMUXW13tS0tI8XsGGmxWzO2DmYrGuBJOJ8k8q2K7hwfJA5qHjuPPe8wtsco33YR9wc+Rlr5wYFvhSA==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      color-support: 1.1.3
+    dev: true
+
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
@@ -4111,14 +4118,14 @@ packages:
       - supports-color
     dev: true
 
-  /gulp-squoosh/0.9.0:
-    resolution: {integrity: sha512-SCl9o+DTx++w7Ff8ei4CKl6oVKbfbtgPaalUB7N1WAVO7XbB7doLrSfxnTPYpYu4RnEyZ0GPI8n3dRlIRJ0ijA==}
+  /gulp-squoosh/0.11.0:
+    resolution: {integrity: sha512-CEyXPICZ+uMWZ2h2T5S0yiwrGNhMvKuzBhFRruz3C1z7dHeSnaarh321Ts3nDwpJ/UzIVxE4+IG91SkABprEZA==}
     engines: {node: ' ^12.5.0 || ^14.0.0 || ^16.0.0 '}
     dependencies:
       '@squoosh/lib': 0.3.1
-      chalk: 4.1.2
-      fancy-log: 1.3.3
-      plugin-error: 1.0.1
+      fancy-log: 2.0.0
+      picocolors: 1.0.0
+      plugin-error: 2.0.1
       through2: 4.0.2
     dev: true
 
@@ -5838,6 +5845,13 @@ packages:
       arr-diff: 4.0.0
       arr-union: 3.1.0
       extend-shallow: 3.0.2
+    dev: true
+
+  /plugin-error/2.0.1:
+    resolution: {integrity: sha512-zMakqvIDyY40xHOvzXka0kUvf40nYIuwRE8dWhti2WtjQZ31xAgBZBhxsK7vK3QbRXS1Xms/LO7B5cuAsfB2Gg==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      ansi-colors: 1.1.0
     dev: true
 
   /portscanner/2.2.0:
